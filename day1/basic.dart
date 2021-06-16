@@ -40,16 +40,44 @@ void main() {
   // test = 60;
   // print(test);
 
-  const test = 39;
-
-  final test1;
-  test1 = 80;
+  const test1 = 5;
+  const test2 = 9;
+  const test3 = 18;
 
   // print(test1);
 
-  if (!(test >= 70)) {
-    print("yes i am equal");
+  if (test1 > test2 || test1 > test3) {
+    print("$test1 is greatest number");
+  } else if (test2 > test1 || test2 > test3) {
+    print("$test2 is greatest number");
   } else {
-    print("no i am not equal");
+    print("$test3 is greatest number");
+  }
+  int val = 7;
+
+  switch (val) {
+    case 1:
+      print("Sunday");
+      break;
+    case 2:
+      print("Monday");
+      break;
+    case 3:
+      print("Tuesday");
+      break;
+    case 4:
+      print("Wednesday");
+      break;
+    case 5:
+      print("Thursday");
+      break;
+    case 6:
+      print("Friday");
+      break;
+    case 7:
+      print("Saturday");
+      break;
+    default:
+      print("Sorry we cannot accept this number");
   }
 }
